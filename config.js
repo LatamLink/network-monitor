@@ -24,7 +24,7 @@ var blockProducerList = [
     "organisation": "EOS Venezuela",
     "location": "Caracas, Venezuela",
     "node_addr": "lacchain.eosvenezuela.io",
-    "port_http": "80",
+    "port_http": "443",
     "port_ssl": "443",
     "port_p2p": "9876"
   },
