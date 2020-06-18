@@ -34,11 +34,15 @@ function getNode(nodeID){
 	var node_https = blockProducerList[nodeID].port_ssl;
 	var node_http = blockProducerList[nodeID].port_http;
 
-	blockProducerList[nodeID].port_p2p
-	var node_http_url = "http://" + node_addr + ":" + node_http + "/v1/chain/get_info";
+	if (node_https) {
+		var node_url = "https://" + node_addr + ":" + node_https + "/v1/chain/get_info";
+	} else if (node_http) {
+		var node_url = "http://" + node_addr + ":" + node_http + "/v1/chain/get_info";
+	}
+	
    	$("#c1_"+blockProducerList[nodeID].bp_name ).addClass( "bold" );
 
-    get (node_http_url, nodeID, updateNodeInfo, nodeError)
+    get (node_url, nodeID, updateNodeInfo, nodeError)
 
 }
 
@@ -69,7 +73,7 @@ function updateNodeInfo(node, nodeID){
 			LastProducer = node.head_block_producer;
 		}
 
-		//console.log(getProducerID(node.head_block_producer));
+		console.log(node.head_block_producer);
 		blockProducerList[getProducerID(node.head_block_producer)].producedTime =  Number(new Date());
 
 
@@ -127,15 +131,18 @@ function initNodesList(){
  		var lastNodeBlockProduced = "--";
  		var lastNodeBlockProducedTime = "--"; 
         var nodeVersion = "--";
- 		var node_http_url = "<a href='https://"+blockProducerList[bp].node_addr+":"+blockProducerList[bp].port_http+"/v1/chain/get_info' target='_blank'>"+blockProducerList[bp].port_http+"</a>";
-
+        if (blockProducerList[bp].port_http) {
+ 			var node_url = "<a href='http://"+blockProducerList[bp].node_addr+":"+blockProducerList[bp].port_http+"/v1/chain/get_info' target='_blank'>"+blockProducerList[bp].port_http+"</a>";
+ 		} else if (blockProducerList[bp].port_ssl){
+ 			var node_url = "<a href='https://"+blockProducerList[bp].node_addr+":"+blockProducerList[bp].port_ssl+"/v1/chain/get_info' target='_blank'>"+blockProducerList[bp].port_ssl+"</a>";
+ 		}
  		$('#bpTable').append("<tr id='noderow_"+bpN+"' class='tblrow text-center'> \
  								<td id='c0_"+bpN+"'>"+(bp*1+1)+"</td> \
  								<td id='c1_"+bpN+"'>"+blockProducerList[bp].bp_name+"</td> \
  								<td id='c2_"+bpN+"'>"+lastCheck+"</td> \
  								<td id='c3_"+bpN+"'>"+lastNodeBlock+"</td> \
 								<td>"+blockProducerList[bp].node_addr+"</td> \
- 								<td>"+node_http_url+"</td> \
+ 								<td>"+node_url+"</td> \
  								<td id='c6_"+bpN+"'>"+nodeVersion+"</td> \
  								<td>"+blockProducerList[bp].location+"</td> \
  							</tr>");
