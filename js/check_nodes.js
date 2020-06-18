@@ -32,9 +32,10 @@ function getNode(nodeID){
 
 	var node_p2p = blockProducerList[nodeID].port_p2p;
 	var node_https = blockProducerList[nodeID].port_ssl;
+	var node_http = blockProducerList[nodeID].port_http;
 
 	blockProducerList[nodeID].port_p2p
-	var node_http_url = "https://" + node_addr + "/v1/chain/get_info";
+	var node_http_url = "http://" + node_addr + ":" + node_http + "/v1/chain/get_info";
    	$("#c1_"+blockProducerList[nodeID].bp_name ).addClass( "bold" );
 
     get (node_http_url, nodeID, updateNodeInfo, nodeError)
