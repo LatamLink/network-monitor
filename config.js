@@ -8,7 +8,7 @@ var blockProducerList = [
    "node_addr": "latamlink.eosio.cr",
    "port_http": "443",
    "port_ssl": "443",
-   "port_p2p": "9878"
+   "port_p2p": "9876"
   },
   {
     "bp_name": "ar1",
