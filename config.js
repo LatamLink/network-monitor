@@ -10,15 +10,15 @@ var blockProducerList = [
    "port_ssl": "443",
    "port_p2p": "9876"
   },
-  // {
-  //   "bp_name": "ar1",
-  //   "organisation": "EOS Argentina",
-  //   "location": "Buenos Aires, Argentina",
-  //   "node_addr": "boot.testnet.latamlink.io",
-  //   "port_http": "6677",
-  //   "port_ssl": "",
-  //   "port_p2p": "9878"
-  //  },
+  {
+   "bp_name": "ar1",
+   "organisation": "EOS Argentina",
+   "location": "Buenos Aires, Argentina",
+   "node_addr": "api.testnet.lacchain.eosargentina.io",
+   "port_http": "",
+   "port_ssl": "443",
+   "port_p2p": "9870"
+   },
    {
     "bp_name": "cr1",
     "organisation": "EOS Costa Rica",
