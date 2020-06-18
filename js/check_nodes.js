@@ -143,6 +143,8 @@ function initNodesList(){
  								<td id='c3_"+bpN+"'>"+lastNodeBlock+"</td> \
 								<td>"+blockProducerList[bp].node_addr+"</td> \
  								<td>"+node_url+"</td> \
+ 								<td>"+blockProducerList[bp].p2p_addr+"</td> \
+ 								<td>"+blockProducerList[bp].port_p2p+"</td> \
  								<td id='c6_"+bpN+"'>"+nodeVersion+"</td> \
  								<td>"+blockProducerList[bp].location+"</td> \
  							</tr>");

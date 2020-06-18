@@ -8,6 +8,7 @@ var blockProducerList = [
    "node_addr": "latamlink.eosio.cr",
    "port_http": "443",
    "port_ssl": "443",
+   "p2p_addr": "boot.testnet.latamlink.io",
    "port_p2p": "9876"
   },
   {
@@ -15,8 +16,9 @@ var blockProducerList = [
    "organisation": "EOS Argentina",
    "location": "Buenos Aires, Argentina",
    "node_addr": "api.testnet.lacchain.eosargentina.io",
-   "port_http": "",
+   "port_http": "443",
    "port_ssl": "443",
+   "p2p_addr": "p2p.testnet.lacchain.eosargentina.io",
    "port_p2p": "9870"
    },
    {
@@ -26,6 +28,7 @@ var blockProducerList = [
     "node_addr": "latamlink.eosio.cr",
     "port_http": "443",
     "port_ssl": "443",
+    "p2p_addr": "latamlink.eosio.cr",
     "port_p2p": "9876"
   },
   {
@@ -35,6 +38,7 @@ var blockProducerList = [
     "node_addr": "lacchain.eosvenezuela.io",
     "port_http": "443",
     "port_ssl": "443",
+    "p2p_addr": "lacchain.eosvenezuela.io",
     "port_p2p": "9876"
   }
 ]
