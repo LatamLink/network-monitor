@@ -1,8 +1,17 @@
 var _reqInterval = 1000;
 
 var blockProducerList = [
+ {
+   "bp_name": "eosio",
+   "organisation": "Latam Link",
+   "location": "Buenos Aires, Argentina",
+   "node_addr": "latamlink.eosio.cr",
+   "port_http": "443",
+   "port_ssl": "443",
+   "port_p2p": "9878"
+  },
   {
-    "bp_name": "eosio",
+    "bp_name": "ar1",
     "organisation": "EOS Argentina",
     "location": "Buenos Aires, Argentina",
     "node_addr": "boot.testnet.latamlink.io",
