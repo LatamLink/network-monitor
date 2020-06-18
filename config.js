@@ -1,16 +1,7 @@
 var _reqInterval = 1000;
 
 var blockProducerList = [
- {
-    "bp_name": "EOS Argentina",
-    "organisation": "EOS Argentina",
-    "location": "Buenos Aires, Argentina",
-    "node_addr": "boot.testnet.latamlink.io",
-    "port_http": "6677",
-    "port_ssl": "443",
-    "port_p2p": "9878"
-  },
-  {
+   {
     "bp_name": "EOS Costa Rica",
     "organisation": "EOS Costa Rica",
     "location": "San Jose, Costa Rica",
@@ -28,4 +19,13 @@ var blockProducerList = [
     "port_ssl": "443",
     "port_p2p": "9876"
   },
+  {
+    "bp_name": "EOS Argentina",
+    "organisation": "EOS Argentina",
+    "location": "Buenos Aires, Argentina",
+    "node_addr": "boot.testnet.latamlink.io",
+    "port_http": "6677",
+    "port_ssl": "",
+    "port_p2p": "9878"
+  }
 ]
