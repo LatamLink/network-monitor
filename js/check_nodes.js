@@ -7,12 +7,10 @@ $( document ).ready(function() {
 	init()
 });
 
-
 function init(){
     initNodesList();
     activated_interval = setInterval (checkNodes, _reqInterval);
 }
-
 
 function checkNodes(){
     LastNodeChecked++;
@@ -28,8 +26,6 @@ function getNode(nodeID){
 
 	var node_p2p_addr = blockProducerList[nodeID].node_addr;
 	var node_addr = blockProducerList[nodeID].node_addr;
-
-
 	var node_p2p = blockProducerList[nodeID].port_p2p;
 	var node_https = blockProducerList[nodeID].port_ssl;
 	var node_http = blockProducerList[nodeID].port_http;
@@ -73,9 +69,8 @@ function updateNodeInfo(node, nodeID){
 			LastProducer = node.head_block_producer;
 		}
 
-		console.log(node.head_block_producer);
+		//console.log(node.head_block_producer);
 		blockProducerList[getProducerID(node.head_block_producer)].producedTime =  Number(new Date());
-
 
 		blockProducerList[nodeID].lastCheck =  Number(new Date());
 		$( "#c4_"+node.head_block_producer ).html(node.head_block_num);
@@ -131,7 +126,7 @@ function initNodesList(){
  		var lastNodeBlockProduced = "--";
  		var lastNodeBlockProducedTime = "--"; 
         var nodeVersion = "--";
-        if (blockProducerList[bp].port_http) {
+        if (blockProducerList[bp].port_http && blockProducerList[bp].port_http != "443") {
  			var node_url = "<a href='http://"+blockProducerList[bp].node_addr+":"+blockProducerList[bp].port_http+"/v1/chain/get_info' target='_blank'>"+blockProducerList[bp].port_http+"</a>";
  		} else if (blockProducerList[bp].port_ssl){
  			var node_url = "<a href='https://"+blockProducerList[bp].node_addr+":"+blockProducerList[bp].port_ssl+"/v1/chain/get_info' target='_blank'>"+blockProducerList[bp].port_ssl+"</a>";
