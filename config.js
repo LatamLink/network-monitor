@@ -5,11 +5,11 @@ var blockProducerList = [
  "bp_name": "eosio",
  "organisation": "Latam Link",
  "location": "Buenos Aires, Argentina",
- "node_addr": "latamlink.eosio.cr",
+ "node_addr": "lacchain.eosio.cr",
  "port_http": "443",
  "port_ssl": "443",
  "p2p_addr": "boot.testnet.latamlink.io",
- "port_p2p": "9876"
+ "port_p2p": "9870"
 },
 {
  "bp_name": "ar1",
@@ -75,60 +75,60 @@ var blockProducerList = [
   "bp_name": "cr1",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
   "bp_name": "cr2",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
   "bp_name": "cr3",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
   "bp_name": "cr4",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
   "bp_name": "cr5",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
   "bp_name": "crsix",
   "organisation": "EOS Costa Rica",
   "location": "San Jose, Costa Rica",
-  "node_addr": "latamlink.eosio.cr",
+  "node_addr": "lacchain.eosio.cr",
   "port_http": "443",
   "port_ssl": "443",
-  "p2p_addr": "latamlink.eosio.cr",
+  "p2p_addr": "lacchain.eosio.cr",
   "port_p2p": "9876"
 },
 {
