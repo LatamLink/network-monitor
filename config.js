@@ -12,6 +12,16 @@ var blockProducerList = [
  "port_p2p": "9870"
 },
 {
+ "bp_name": "iadb",
+ "organisation": "Interamerican Development Bank",
+ "location": "Washington DC, USA",
+ "node_addr": "lacchain.eosio.cr",
+ "port_http": "443",
+ "port_ssl": "443",
+ "p2p_addr": "boot.testnet.latamlink.io",
+ "port_p2p": "9870"
+},
+{
  "bp_name": "proda",
  "organisation": "EOS Argentina",
  "location": "Buenos Aires, Argentina",
