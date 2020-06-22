@@ -12,7 +12,7 @@ var blockProducerList = [
  "port_p2p": "9870"
 },
 {
- "bp_name": "ar1",
+ "bp_name": "proda",
  "organisation": "EOS Argentina",
  "location": "Buenos Aires, Argentina",
  "node_addr": "api2.testnet.lacchain.eosargentina.io",
@@ -22,7 +22,7 @@ var blockProducerList = [
  "port_p2p": "9870"
 },
 {
-  "bp_name": "ar2",
+  "bp_name": "prodb",
   "organisation": "EOS Argentina",
   "location": "Buenos Aires, Argentina",
   "node_addr": "api2.testnet.lacchain.eosargentina.io",
@@ -32,7 +32,7 @@ var blockProducerList = [
   "port_p2p": "9870"
 },
 {
- "bp_name": "ar3",
+ "bp_name": "prodc",
  "organisation": "EOS Argentina",
  "location": "Buenos Aires, Argentina",
  "node_addr": "api2.testnet.lacchain.eosargentina.io",
@@ -42,7 +42,7 @@ var blockProducerList = [
  "port_p2p": "9870"
 },
 {
-  "bp_name": "ar4",
+  "bp_name": "prodd",
   "organisation": "EOS Argentina",
   "location": "Buenos Aires, Argentina",
   "node_addr": "api2.testnet.lacchain.eosargentina.io",
